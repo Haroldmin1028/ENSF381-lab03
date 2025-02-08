@@ -1,6 +1,8 @@
 .Container{  
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
 }
  
 .item {
@@ -19,5 +21,35 @@
     margin: 0 auto 10px;
 }
 .navbar {
-    
+    width: 100%;
+    padding: 20px;
+}
+
+.navbar:hover {
+    background-color: #333;
+}
+
+.navbar a {
+    padding: 15px 20px;
+    font-size: small;
+    color: white;
+}
+
+.dropdown {
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+}
+
+.dropdown-content a {
+    background-color: white;
+    color: black;
+    display: block;
+    border: 1px solid grey
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
 }
